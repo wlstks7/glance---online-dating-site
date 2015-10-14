@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto_regular/Roboto-Regular-webfont.eot?iefix") format("eot"), url("../fonts/roboto_regular/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/roboto_regular/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/roboto_regular/Roboto-Regular-webfont.svg#webfont") format("svg");
+}
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/roboto_light/Roboto-Light-webfont.eot?iefix") format("eot"), url("../fonts/roboto_light/Roboto-Light-webfont.woff") format("woff"), url("../fonts/roboto_light/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/roboto_light/Roboto-Light-webfont.svg#webfont") format("svg");
+}
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("../fonts/roboto_thin/Roboto-Thin-webfont.eot?iefix") format("eot"), url("../fonts/roboto_thin/Roboto-Thin-webfont.woff") format("woff"), url("../fonts/roboto_thin/Roboto-Thin-webfont.ttf") format("truetype"), url("../fonts/roboto_thin/Roboto-Thin-webfont.svg#webfont") format("svg");
+}
+
+#logo {
+    cursor: default;
+    font-family: roboto thin;
+    font-size: 62px;
+    letter-spacing: -2px;
+    line-height: 62px;
+    padding: 2px;
+}
+
+.logo_msg {
+    font-family: roboto thin;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0;
+}

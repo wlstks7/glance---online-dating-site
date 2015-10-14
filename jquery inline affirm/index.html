@@ -1,0 +1,30 @@
+<html id="html">
+<head>
+	<title>jQuery Inline Affirm Sample</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="jquery-inline-affirm.css">
+</head>
+<body>
+	<div id="affirmContainer">
+		<div class="affirm button" data-id="1111" data-title="Save" data-question="Save this document?"></div>
+		<div class="affirm light" data-id="1112" data-title="Update" data-question="Update this profile?"></div>
+		<div class="affirm dark" data-id="1113"  data-title="Dark Example" data-question="Do you like this example?"></div>
+	</div>
+
+	<script src="jquery.min.js"></script>
+	<script src="jquery-inline-affirm.js"></script>
+	<script type="text/javascript">
+
+		$(function(){
+
+			$(".affirm").inlineAffirm({
+				callback : function(ele){
+					console.log( $(ele).attr("data-id" ));
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+

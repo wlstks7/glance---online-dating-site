@@ -1,0 +1,106 @@
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto_regular/Roboto-Regular-webfont.eot?iefix") format("eot"), url("../fonts/roboto_regular/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/roboto_regular/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/roboto_regular/Roboto-Regular-webfont.svg#webfont") format("svg");
+}
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/roboto_light/Roboto-Light-webfont.eot?iefix") format("eot"), url("../fonts/roboto_light/Roboto-Light-webfont.woff") format("woff"), url("../fonts/roboto_light/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/roboto_light/Roboto-Light-webfont.svg#webfont") format("svg");
+}
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("../fonts/roboto_thin/Roboto-Thin-webfont.eot?iefix") format("eot"), url("../fonts/roboto_thin/Roboto-Thin-webfont.woff") format("woff"), url("../fonts/roboto_thin/Roboto-Thin-webfont.ttf") format("truetype"), url("../fonts/roboto_thin/Roboto-Thin-webfont.svg#webfont") format("svg");
+}
+
+@font-face {
+                font-family: 'BLOKKRegular';
+                src: url('../fonts/BLOKKRegular/webfonts/BLOKKRegular.eot');
+}
+
+@font-face {
+                font-family: 'BLOKKRegular';
+                src: url('../fonts/BLOKKRegular/webfonts/BLOKKRegular.woff') format('woff'),
+                url('../fonts/BLOKKRegular/webfonts/BLOKKRegular.svg#BLOKKRegular') format('svg');
+}
+
+@media only screen and (max-width:550px) {
+  
+  .ui.primary.button {
+	    display: block !important;
+	    margin-bottom: 12px !important;
+	}
+}
+
+*::-moz-selection {
+    background-color: #009DFF !important;
+    color: #FFFFFF;
+}
+
+.ui.input.focus input,
+.ui.input input:focus {
+  border-color: rgba(39, 41, 43, 0.3);
+  background-color: #009DFF !important;
+  color: #FFFFFF;
+  box-shadow: none;
+}
+
+.disablePanZoom 
+{
+    -ms-touch-action: none; /* Shunt all pointer events to JavaScript code. */
+}
+
+/*over rides*/
+.ui.selection.dropdown {
+    min-width: 130px !important;
+}
+
+.ui.grid {
+    width: 100%!important;
+}
+
+.ui.dropdown .menu > .header {
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: none !important;
+}
+
+.ui.list .item a {
+    color: #DDDDDD !important;
+}
+
+.cart_listItem {
+    font-weight:normal !important;
+}
+
+.cart_item_header {
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 3px;
+}
+
+.cartItem {
+	margin-top: 5px;
+}
+
+.removable {
+	cursor: pointer;
+	color: #DDDDDD;
+}
+
+.removable:hover {
+	color: #C10B0B;
+}
+
+.ui.list .list > .item .header, .ui.list > .item .header-list {
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+}
+
+.ui.form .field, .ui.form .fields .field {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+

@@ -1,0 +1,926 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto_regular/Roboto-Regular-webfont.eot?iefix") format("eot"), url("../fonts/roboto_regular/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/roboto_regular/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/roboto_regular/Roboto-Regular-webfont.svg#webfont") format("svg");
+}
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/roboto_light/Roboto-Light-webfont.eot?iefix") format("eot"), url("../fonts/roboto_light/Roboto-Light-webfont.woff") format("woff"), url("../fonts/roboto_light/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/roboto_light/Roboto-Light-webfont.svg#webfont") format("svg");
+}
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("../fonts/roboto_thin/Roboto-Thin-webfont.eot?iefix") format("eot"), url("../fonts/roboto_thin/Roboto-Thin-webfont.woff") format("woff"), url("../fonts/roboto_thin/Roboto-Thin-webfont.ttf") format("truetype"), url("../fonts/roboto_thin/Roboto-Thin-webfont.svg#webfont") format("svg");
+}
+
+@font-face {
+                font-family: 'BLOKKRegular';
+                src: url('../fonts/BLOKKRegular/webfonts/BLOKKRegular.eot');
+}
+
+@font-face {
+                font-family: 'BLOKKRegular';
+                src: url('../fonts/BLOKKRegular/webfonts/BLOKKRegular.woff') format('woff'),
+                url('../fonts/BLOKKRegular/webfonts/BLOKKRegular.svg#BLOKKRegular') format('svg');
+}
+
+#mainProfileName {
+    color: #ffffff;
+    font-family: helvetica neue;
+    font-size: 40px;
+    left: 222px;
+    position: absolute;
+    text-shadow: 2px 2px 0 #444444;
+    top: 48px;
+    z-index: 10000000;
+}
+
+html, body, #topMenuContainer, .bannerNavBar-fixed {
+    min-width: 950px!important;
+}
+
+html, body, #pageBody {
+    height: 100%;
+    background-color: #F5F8FA !important;
+}
+
+#pageBody {
+    margin: 0;
+}
+
+a {
+    color: #458ac6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #539EDB;
+    text-decoration: underline;
+}
+
+/*windows surface*/
+.disablePanZoom 
+{
+    -ms-touch-action: none; /* Shunt all pointer events to JavaScript code. */
+}
+
+/*
+
+top menu
+
+
+*/
+
+#topMenuContainer {
+    background-color: #333333;
+    border-bottom: 1px solid #e1e8ed;
+    /*box-shadow: 0 0 2px #444444;*/
+    box-shadow: 0 1px 5px #444444;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1000000!important;
+    border-bottom: 0px solid #333333!important;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    semantic resets for the top menu
+*/
+.ui.secondary.pointing.menu {
+    border-bottom: 3px solid #333333!important;
+}
+
+.ui.secondary.menu .link.item, .ui.secondary.menu a.item {
+    opacity: 1!important;
+}
+
+.ui.secondary.inverted.menu .link.item, .ui.secondary.inverted.menu a.item:hover {
+    color: #FFFFFF!important;
+}
+
+.ui.menu .item > i.icon {
+    opacity: 1!important;
+}
+
+/*
+    END semantic resets for the top menu
+*/
+
+.__messages-count {
+    box-shadow: 0 0 0 2px #333333;
+    font-size: 8px !important;
+    left: 1px;
+    position: absolute;
+    top: 7px;
+}
+
+#topMenuContainerInner {
+    width: 100%;
+    margin: auto auto;
+}
+
+#topmenu .item {
+    font-size: 14px !important;
+    font-weight: bolder;
+    line-height: 18px !important;
+    float: left;
+}
+
+#topmenu .icon {
+    font-size: 17px !important;
+    line-height: 26px;
+}
+
+.topmenuItems {
+    width: 100%;
+    margin: auto auto;
+}
+
+#topgap {
+
+    background-color: #000000;
+    height: 38px;
+}
+/*
+
+banner
+
+*/
+
+#banner_old{
+    height:300px;
+    width: 100%;
+    padding: 0;
+    margin: -1px;
+    position: relative;
+    background-color: #444444;
+    overflow: hidden;
+}
+
+#banner {
+    background-color: #444444;
+    border-top: 2px solid #0a0a0a;
+    height: 300px;
+    margin: -1px 0 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.bannerImage__old {
+    /* Set rules to fill background */
+    min-height: 400px;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+}
+
+.bannerImage_0LD {
+    height: auto;
+    left: 0;
+    min-height: 400px;
+    min-width: 1024px;
+    position: absolute;
+    top: -60px;
+    width: 100%;
+}
+
+
+.bannerImage {
+    height: auto;
+    left: 0;
+    min-height: 325px;
+    min-width: 1024px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+#edit_banner_overlay {
+    height: 300px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background: url("../assets/overlay_35p.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.banner_overlay_msg {
+    color: #ffffff;
+    margin: 148px auto;
+    padding: 0;
+    text-align: center;
+}
+
+#edit_banner {
+    height: 300px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+#edit_banner > iframe {
+    border: 0 solid #000000;
+    border-bottom: 2px solid #c4c4c4;
+    height: 131px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width:1000px) {
+  
+}
+
+@media only screen and (min-width:1000px) {
+
+
+
+
+}
+
+/*
+
+banner nav bar content
+
+*/
+#bannerNavBar {
+    background-color: #fff;
+    border-top: 1px solid #e1e8ed;
+    border-top: 2px solid #444444;
+    border-bottom: 1px solid #ededed;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+.contentCenterCol > .statistic {
+    margin-top: -5px !important;
+}
+
+.bannerNavBar-fixed {
+    left: 0;
+    position: fixed;
+    top: 43px;
+    width: 100%;
+    z-index: 10000;
+}
+
+/*
+****************
+****************
+****************
+*/
+
+#mainProfileImageContainer {
+    position: absolute;
+    top: -119px;
+    left: 20px;
+}
+
+#mainProfileImageContainer180 {
+    left: 20px;
+    position: absolute;
+    top: -93px;
+}
+
+#mainProfileImage {
+
+    background: none repeat scroll 0 0 #fff;
+    border: 5px solid #fff;
+    border-radius: 12px;
+    height: 205px;
+    width: 205px;
+    /*height: 180px;
+    width: 180px;*/
+    position: relative;
+    /*box-shadow: 0 1px 1px rgba(136, 153, 166, 0.15);*/
+    /*box-shadow: -4px -2px 13px rgba(0, 0, 0, 0.24), 1px 1px 1px rgba(136, 153, 166, 0.24);*/
+    box-shadow: -1px -1px 6px rgba(0, 0, 0, 0.24), 1px 1px 1px rgba(136, 153, 166, 0.24);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+/*.profile-image, .profile-placeholderImage {
+    -moz-force-broken-image-icon: 1;
+    border-radius: 8px;
+    height: 200px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 200px;
+}*/
+
+.profile-image, .profile-placeholderImage {
+    -moz-force-broken-image-icon: 1;
+    border-radius: 8px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    height: 197px;
+    width: 197px;
+    /*height: 174px;
+    width: 174px;*/
+}
+
+
+#edit_profile_image {
+    background: url("../assets/overlay_35p.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #ffffff;
+    /*height: 100px;*/
+    height: 106px;
+    left: 0;
+    padding: 14px 0 0;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+    z-index: 10000;
+    cursor: pointer;
+    border-radius: 0 0 13px 13px;
+}
+
+#crop_profile_photo {
+    /*box-shadow: -1px -1px 6px rgba(0, 0, 0, 0.24), 1px 1px 1px rgba(136, 153, 166, 0.24);*/
+    border: 3px solid #444444;
+    border-radius: 5px;
+    box-shadow: 18px 19px 19px rgba(0, 0, 0, 0.40), 0px 0px 1px #444444;
+    width: 400px;
+    position: absolute;
+    left: -5px;
+    top: -29px;
+    z-index: 100000;
+    overflow: hidden;
+}
+
+#crop_profile_photo > iframe {
+    height: 369px;
+    width: 100%;
+    border: 0px none transparent;
+}
+
+#profileAboutMe {
+    margin: 25px 0;
+}
+
+#profileAboutMe > p {
+    color: #787878;
+    font-family: roboto thin;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#profileAboutMe > p > span {
+    font-size: 11px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.profileEditFooter {
+    background-color: #333333;
+    border-radius: 0 0 5px 5px;
+    color: #ffffff;
+    margin: 0;
+    min-height: 100px;
+    padding: 0;
+}
+
+.profileEditFooterInner {
+    padding: 20px;
+    margin: 0px;
+}
+
+#editProfileContainer {
+    position: relative;  
+}
+
+#editProfileContainer > .ui.bottom.attached.label {
+    bottom: 16px;
+    position: absolute;
+}
+
+#profileDescription {
+    margin-bottom: 16px !important;
+}
+/*
+
+content containers
+
+*/
+
+#contentContainer {
+
+    margin: 10px 0;
+}
+
+.contentContainer {
+    width: 100%;
+    min-height: 100px;
+    background-color: #FFFFFF;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    margin: 0 0 12px;
+}
+
+.contentContainerWithHeader_withsilver{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f7f9f8+28,ffffff+97 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f7f9f8 28%, #ffffff 97%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(28%,#f7f9f8), color-stop(97%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f9f8 28%,#ffffff 97%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f7f9f8 28%,#ffffff 97%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f7f9f8 28%,#ffffff 97%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f7f9f8 28%,#ffffff 97%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.containerFrame {
+    overflow: hidden;
+    position: relative;    
+}
+
+.contentContainer > .contentInner {
+    margin: 0;
+    padding: 12px 16px;
+    width: 100%;
+    min-height: 200px; 
+}
+
+.containerFrame > .colorTop {
+    background-color: #5999DD;
+    background-color: #b2b2b2;
+    /*border-bottom: 1px solid #eeeeee;*/
+    margin: -2px 0 0;
+    min-height: 8px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.containerFrame > .colorFooter {
+    background-color: #f8f8f8;
+    bottom: -4px;
+    height: 18px;
+    position: absolute;
+    width: 100%;
+}
+
+.postInner {
+    margin: 0;
+    padding: 5px 7px 20px;
+    width: 100%;
+}
+
+.postAvatarContainer {
+    vertical-align: top;
+    width: 80px;
+}
+
+.postContentContainer {
+    vertical-align: top;
+    width: 100%;
+}
+
+.postContentContainer > h4 {
+    border-bottom: 1px solid #eeeeee;
+    font-family: roboto thin;
+    font-size: 12px;
+    margin: 0 !important;
+    padding: 0 0 3px !important;
+    color: #b1b1b1;
+}
+
+.postContent {
+    color: #6d777f;
+    font-family: roboto thin;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 4px 20px;
+}
+
+.postImageContainer {
+    margin: 15px 0 0 0;
+}
+
+.contentContainer > .ui.ribbon.label {
+    left: -15px!important;
+    margin: 16px 0 0!important;
+}
+
+.contentHeader > h3 {
+    font-size: 16px;
+    font-weight: normal;
+    display: inline;
+    color: #6b6b6b;
+}
+
+.contentHeader > a {
+    font-size: 12px;
+    font-weight: normal;
+    display: inline;
+}
+
+.contentHeader > h3 {
+    text-transform: capitalize;
+}
+
+.about_strongText {
+    color: #9a9a9a !important;
+    font-family: "helvetica neue",arial !important;
+    font-size: 10px;
+    margin: 0;
+    padding: 2px 5px 0 0 !important;
+    text-transform: uppercase;
+}
+.about_regularText {
+    color: #444444 !important;
+    font-size: 13px;
+    font-style: normal;
+}
+.td_about {
+    text-align: left;
+    vertical-align: top;
+    padding: 0 5px
+}
+.ui.simple.divider.lighter {
+    border-top: 1px dashed #eeeeee !important;
+    margin: 3px 0 16px;
+}
+
+/*
+
+content container left
+
+*/
+
+.contentInnerLeft {
+    margin: 0 0 0 15px;
+    overflow: hidden;
+    padding: 0;
+}
+
+h1.profileFirstName {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+h2.profileScreenName {
+    color: #a1a8ad;
+    font-family: roboto thin;
+    font-size: 15px;
+    font-weight: normal;
+    margin: -17px 0 0;
+    padding: 0;
+}
+
+.contentInnerLeft > p {
+    color: #60676c!important;
+
+}
+
+/*
+
+content container middle
+
+*/
+
+.editorContainer {
+    margin: 0;
+    padding: 12px 16px;
+}
+
+.editorContainer > .editor {
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    width: 100%;
+    padding: 9px;
+}
+
+.editorContainer > .editor_btns {
+    margin: 5px 0 0 0;
+}
+
+.post_editor {
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    height: 150px;
+    margin: -1px 0 0;
+    max-width: 100%;
+    min-height: 150px;
+    min-width: 100%;
+    padding: 9px;
+    width: 100%!important;
+}
+
+#post_imagesContainer {
+
+}
+
+.post_editContainer {
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f7f9f8+37,ffffff+61,ffffff+97 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f7f9f8 37%, #ffffff 61%, #ffffff 97%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(37%,#f7f9f8), color-stop(61%,#ffffff), color-stop(97%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f9f8 37%,#ffffff 61%,#ffffff 97%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f7f9f8 37%,#ffffff 61%,#ffffff 97%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f7f9f8 37%,#ffffff 61%,#ffffff 97%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f7f9f8 37%,#ffffff 61%,#ffffff 97%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+}
+.remove_postImage {
+    background-color: #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    height: 15px;
+    opacity: 0.56;
+    padding: 1px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 17px;
+    z-index: 1000;
+}
+
+.remove_postImage:hover {
+    opacity: 0.7;
+}
+
+.post_imageThumb {
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    height: 70px;
+    margin: 13px 8px 8px 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 70px;
+    cursor: move;
+}
+
+.profileHide {
+    display: none !important;
+}
+
+/*
+
+2 column or 3 column responsive handler
+
+*/
+
+/*
+    2 column handler
+*/
+
+@media only screen and (max-width:1200px) {
+  
+    #btn_editProfileCenterCol {
+        display: block;
+    }
+    #btn_editProfileRightCol {
+        display: none;
+    }
+    .containerSharedLeft {
+        display: block;
+    }
+    .containerSharedRight {
+        display: none;
+    }
+    .cancelButtonRight {
+        display: none !important;
+    }
+    .cancelButtonCenter {
+        display: block !important;
+    }
+}
+
+/*
+    3 column handler
+*/
+
+@media only screen and (min-width:1200px) {
+    
+    #btn_editProfileCenterCol {
+        display: none;
+    }
+    #btn_editProfileRightCol {
+        display: block;
+    }
+    .containerSharedLeft {
+        display: none;
+    }
+    .containerSharedRight {
+        display: block;
+    }
+    .cancelButtonRight {
+        display: block !important;
+    }
+    .cancelButtonCenter {
+        display: none !important;
+    }
+    .contentCenterEdit {
+        width: 75% !important;
+    }
+}
+
+#topMenuContainerInner {
+    width: 96%;
+
+}
+
+.contentRightCol_HIDDEN {
+    display: none !important;
+}
+
+
+@media only screen and (max-width:1200px) {
+  
+    .contentRightCol{
+        display: none !important;
+    }
+
+    .ui.column.grid > .column[class*="four wide"], .ui.grid > .column.row > .column[class*="four wide"], .ui.grid > .row > .column[class*="four wide"], .ui.grid > .column[class*="four wide"] {
+        width: 28% !important;
+    }
+
+    .ui.column.grid > .column[class*="eight wide"], .ui.grid > .column.row > .column[class*="eight wide"], .ui.grid > .row > .column[class*="eight wide"], .ui.grid > .column[class*="eight wide"] {
+        width: 62% !important;
+    }
+
+    #topMenuContainerInner {
+        width: 90%;
+
+    }
+}
+
+@media only screen and (max-width:675px) {
+  
+    .ui.primary.button {
+	    display: block !important;
+	    margin-bottom: 12px !important;
+	}
+    .helpvideo {
+        display: block !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+*::-moz-selection {
+    background-color: #009DFF !important;
+    color: #FFFFFF;
+}
+
+.ui.input.focus input,
+.ui.input input:focus {
+  border-color: rgba(39, 41, 43, 0.3);
+  background-color: #009DFF !important;
+  color: #FFFFFF;
+  box-shadow: none;
+}
+
+.disablePanZoom 
+{
+    -ms-touch-action: none; /* Shunt all pointer events to JavaScript code. */
+}
+
+/*over rides*/
+.ui.selection.dropdown {
+    min-width: 130px !important;
+}
+
+.ui.grid {
+    width: 99%!important;
+    margin: 0!important;
+}
+
+.ui.dropdown .menu > .header {
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: none !important;
+}
+
+.ui.list .item a {
+    color: #DDDDDD !important;
+}
+
+.cart_listItem {
+    font-weight:normal !important;
+}
+
+.cart_item_header {
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 3px;
+}
+
+.cartItem {
+	margin-top: 5px;
+}
+
+.removable {
+	cursor: pointer;
+	color: #DDDDDD;
+}
+
+.removable:hover {
+	color: #C10B0B;
+}
+
+.ui.list .list > .item .header, .ui.list > .item .header-list {
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+}
+
+.site-hashtag {
+    background-color: $eeeeee;
+}
+
+.howmanylikes {
+    color: #458ac6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.howmanylikes:hover {
+    color: #539EDB;
+    text-decoration: underline;
+}
+
+.like-container {
+    margin: 10px 0;
+}
+.card-tiny-card {
+    float: left;
+    font-size: 11px;
+    margin: 0 !important;
+    padding: 5px 7px;
+    text-align: center;
+}
+
+.card-tiny-image {
+    margin: 0;
+    text-align: center;
+    width: 35px;
+}
+
+.card-tiny-image > a > img {
+    border-radius: 7px!important;
+}
+
+.card-tiny-msg {
+    margin: 0;
+    text-align: center;
+}
+
+.likePeopleCount {
+    cursor: pointer;
+}
+
+.likePeopleCount:hover {
+    color: #539EDB!important;  
+}
+
+.glanceCount {
+    cursor: pointer;
+}
+
+.glanceCount:hover {
+    color: #539EDB!important;  
+}
+
+.postMsgContainer {
+    margin: 0 0 9px;
+}
+
+#glanceProfileVisibilityLink {
+    font-size: 10px;
+}
+
+
+

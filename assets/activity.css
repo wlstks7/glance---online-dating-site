@@ -1,0 +1,36 @@
+.ui.feed > .event {
+    position: relative!important;
+}
+
+.ui.feed > .event > .content .summary {
+    font-size: 12px!important;
+    font-weight: normal!important;
+}
+
+.ui.feed > .event > .content .date {
+    font-size: 11px!important;
+}
+
+.ui.feed > .event > .label img {
+    cursor: alias;
+}
+
+.hidden_image {
+    left: 38px;
+    position: absolute;
+    top: -48px;
+    width: 125px;
+    z-index: 1000000;
+}
+
+.hidden_image > img {
+    border: 5px solid #ffffff;
+    border-radius: 100px;
+    box-shadow: 0 0 3px #dbdbdb;
+}
+
+.noActivityMsg {
+    color: #dddddd;
+    font-size: 12px;
+    padding: 0 0 0 10px;
+}
