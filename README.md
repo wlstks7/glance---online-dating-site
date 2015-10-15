@@ -5,6 +5,7 @@ by J. Ashley Craig (www.ashcraig.com) and offered as open source
 under the MIT License.
 
 Screens: http://bit.ly/1X4Z9ux
+
 Demo: www.glancedate.com
 
 ## Concept
