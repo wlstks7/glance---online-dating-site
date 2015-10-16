@@ -134,7 +134,6 @@ if ( $_SESSION["account_created"] != "TRUE" ){
 	            			<div style="font-size: 20px; line-height: 31px;" class="header">
 	            				Account Created!
 	            			</div>
-	            			<p>As you probably know, we just launched Glance and we're thankful for people like you who help us spread the word! Please take a moment to setup your profile and please don't forget to post, post, post :-) <br><br>We are just getting started so we appreciate everyone who signs up. If you have questions or issues, please reach out. My Glance user name is @ash. <br><br>With much love,<br><br>Ash</p>
 	            		</div>
 	            	</div>
 	            	<p><a class="ui button blue fluid" href="<?php echo $this_site; ?>home">Click here to log in</a></p>
